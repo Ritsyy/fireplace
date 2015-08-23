@@ -21,8 +21,8 @@ define('previews-buttons',
 
         $container.find('.arrow-btn-prev, .arrow-btn-next').remove();
 
-        var $prevBtn = $('<a class="arrow-btn arrow-btn-prev"></a>');
-        var $nextBtn = $('<a class="arrow-btn arrow-btn-next"></a>');
+        var $prevBtn = $('<a class="arrow-btn arrow-btn-prev" data-no-transparent></a>');
+        var $nextBtn = $('<a class="arrow-btn arrow-btn-next" data-no-transparent></a>');
         var $previewBtns = $prevBtn.add($nextBtn);
 
         function setPreviewBtnState() {
